@@ -53,6 +53,7 @@ if train_new_model:
 else:
     model = tf.keras.models.load_model('handwritten_digits.keras')
 
+# Note. Images should ideally be 28x28
 image_number = 1
 while os.path.isfile(f'digits/digit{image_number}.png'):
     try:
