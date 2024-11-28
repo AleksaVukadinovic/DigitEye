@@ -27,11 +27,41 @@ Install the required libraries with:
 pip install tensorflow numpy opencv-python matplotlib
 ```
 
-Note that if you are using Linux, you will most likely need to create virtual environment to install these libraries, as pip installing is no longer recommended.
+Note for Linux users:
+It is recommended to create a virtual environment to install these libraries, as direct pip installation may lead to system-wide conflicts. Use the following commands to set up a virtual environment:
 
-## Materials used
+```bash
+python3 -m venv digit_eye_env
+source digit_eye_env/bin/activate
+pip install tensorflow numpy opencv-python matplotlib
+```
 
-- [DeepLearning series by 3Blue1Brown] (https://www.youtube.com/watch?v=aircAruvnKk list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
-- [Handwritten Digit Recognition by NeuralNine] (https://youtu.be/bte8Er0QhDg?si=Nf-ChxRHdiWNV2M0)
-- [Veštačka inteligencija book by Mladen Nikolić & Predrag Janičić] (https://poincare.matf.bg.ac.rs/~janicic//books/VI_B5.pdf)
-- [Using neural networks to recognize digits article] (http://neuralnetworksanddeeplearning.com/chap1.html)
+## Usage
+1. Clone the repository
+```bash
+git clone https://github.com/AleksaVukadinovic/DigitEye
+cd DigitEye
+```
+
+2. Run the script
+```bash
+python digit_recognition.py
+```
+
+3. Follow the console prompts
+
+## Materials Used
+
+This project draws inspiration from and builds upon the following resources:
+
+- [DeepLearning Series by 3Blue1Brown](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)  
+  An excellent visual introduction to the concepts behind neural networks and deep learning.
+
+- [Handwritten Digit Recognition by NeuralNine](https://youtu.be/bte8Er0QhDg?si=Nf-ChxRHdiWNV2M0)  
+  A practical guide to implementing a digit recognition system.
+
+- [Veštačka inteligencija (Artificial Intelligence)](https://poincare.matf.bg.ac.rs/~janicic//books/VI_B5.pdf)  
+  A comprehensive textbook by Mladen Nikolić and Predrag Janičić, providing theoretical insights into artificial intelligence.
+
+- [Using Neural Networks to Recognize Digits](http://neuralnetworksanddeeplearning.com/chap1.html)  
+  A detailed article explaining the mathematics and algorithms behind digit recognition using neural networks.
